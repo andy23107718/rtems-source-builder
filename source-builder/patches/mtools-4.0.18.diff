@@ -11,7 +11,7 @@ diff -u -r mtools-4.0.18/sysincludes.h mtools-4.0.18.new/sysincludes.h
  # if __GNUC__ == 2 && __GNUC_MINOR__ > 6 || __GNUC__ >= 3
  /* gcc 2.6.3 doesn't have "unused" */		/* mool */
 -#  define UNUSED(x) x __attribute__ ((unused));x
-+#  define UNUSED(x) x __attribute__ ((unused))
++#  define UNUSED(x) x
  #  define UNUSEDP __attribute__ ((unused))
  # else
  #  define UNUSED(x) x
